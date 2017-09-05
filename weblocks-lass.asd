@@ -13,7 +13,8 @@
   :version (:read-file-form "version.lisp-expr")
   :author ""
   :license ""
-  :depends-on (:lass)
+  :depends-on (:weblocks
+               :lass)
   :components ((:module "src"
                 :components
                 ((:file "weblocks-lass"))))
