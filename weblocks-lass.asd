@@ -1,23 +1,10 @@
-#|
-  This file is a part of weblocks-lass project.
-|#
-
-
-(in-package :cl-user)
-(defpackage weblocks-lass-asd
-  (:use :cl :asdf))
-(in-package :weblocks-lass-asd)
-
-
 (defsystem weblocks-lass
   :version (:read-file-form "version.lisp-expr")
+  :class :package-inferred-system
   :author ""
   :license ""
-  :depends-on (:weblocks
-               :lass)
-  :components ((:module "src"
-                :components
-                ((:file "weblocks-lass"))))
+  :pathname "src"
+  :depends-on ("weblocks-lass/core")
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
