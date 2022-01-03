@@ -1,19 +1,19 @@
 (in-package :cl-user)
-(defpackage weblocks-lass
+(defpackage reblocks-lass
   (:use :cl)
-  (:import-from #:weblocks/dependencies
+  (:import-from #:reblocks/dependencies
                 #:local-dependency
                 #:get-url
                 #:get-content-type
                 #:serve)
-  (:import-from #:weblocks/utils/misc
+  (:import-from #:reblocks/utils/misc
                 #:md5)
   (:import-from #:lass
                 #:compile-and-write)
   (:export
    #:make-dependency
    #:lass-dependency))
-(in-package weblocks-lass)
+(in-package reblocks-lass)
 
 
 (defclass lass-dependency (local-dependency)

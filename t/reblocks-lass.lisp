@@ -1,10 +1,10 @@
 (in-package :cl-user)
-(defpackage weblocks-lass-test
+(defpackage reblocks-lass-test
   (:use :cl
-        :weblocks-lass
+        :reblocks-lass
         :prove
         :hamcrest.matchers))
-(in-package :weblocks-lass-test)
+(in-package :reblocks-lass-test)
 
 
 (plan 1)

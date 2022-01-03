@@ -1,10 +1,10 @@
-(defsystem weblocks-lass
+(defsystem reblocks-lass
   :version (:read-file-form "version.lisp-expr")
   :class :package-inferred-system
   :author ""
   :license ""
   :pathname "src"
-  :depends-on ("weblocks-lass/core")
+  :depends-on ("reblocks-lass/core")
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
@@ -19,5 +19,5 @@
           (setf (fill-pointer seq)
                 (read-sequence seq stream))
           seq)))
-  :in-order-to ((test-op (test-op weblocks-lass-test))))
+  :in-order-to ((test-op (test-op reblocks-lass-test))))
 

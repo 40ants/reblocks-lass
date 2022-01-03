@@ -1,22 +1,13 @@
-#|
-  This file is a part of weblocks-lass project.
-|#
-
-(in-package :cl-user)
-(defpackage weblocks-lass-test-asd
-  (:use :cl :asdf))
-(in-package :weblocks-lass-test-asd)
-
-(defsystem weblocks-lass-test
+(defsystem reblocks-lass-test
   :author ""
   :license ""
-  :depends-on (:weblocks-lass
+  :depends-on (:reblocks-lass
                :prove
                :hamcrest-prove)
   :components ((:module "t"
                 :components
-                ((:test-file "weblocks-lass"))))
-  :description "Test system for weblocks-lass"
+                ((:test-file "reblocks-lass"))))
+  :description "Test system for reblocks-lass"
 
   :defsystem-depends-on (:prove-asdf)
   :perform (test-op :after (op c)

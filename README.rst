@@ -1,17 +1,17 @@
 ===============
- weblocks-lass
+ reblocks-lass
 ===============
 
 .. insert-your badges like that:
 
-.. image:: https://travis-ci.org/40ants/weblocks-lass.svg?branch=master
-    :target: https://travis-ci.org/40ants/weblocks-lass
+.. image:: https://travis-ci.org/40ants/reblocks-lass.svg?branch=master
+    :target: https://travis-ci.org/40ants/reblocks-lass
 
 .. Everything starting from this commit will be inserted into the
    index page of the HTML documentation.
 .. include-from
 
-A utility system to define Weblocks dependencies as code in Lass
+A utility system to define Reblocks dependencies as code in Lass
 syntax.
 
 Reasoning
@@ -40,7 +40,7 @@ Building Documentation
 
 To use this library:
 
-* load it with ``(ql:quickload :weblocks-lass)``;
+* load it with ``(ql:quickload :reblocks-lass)``;
 * define a dependency:
 
   TODO: add code snippet
