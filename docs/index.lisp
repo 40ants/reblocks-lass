@@ -56,7 +56,6 @@
 ![Quicklisp](http://quickdocs.org/badge/reblocks-lass.svg)
 "
   (@installation section)
-  (@usage section)
   (@api section))
 
 
@@ -73,15 +72,6 @@ You can install this library from Quicklisp, but you want to receive updates qui
 (ql:quickload :reblocks-lass)
 ```
 """)
-
-
-(defsection @usage (:title "Usage"
-                    :ignore-words ("ASDF:PACKAGE-INFERRED-SYSTEM"
-                                   "ASDF"
-                                   "40A"))
-  "
-TODO: Write a library description. Put some examples here.
-")
 
 
 (defautodoc @api (:system "reblocks-lass"))
