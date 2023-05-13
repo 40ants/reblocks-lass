@@ -9,6 +9,7 @@
                               "ASDF"
                               "REPL"
                               "40A"
+                              "CI"
                               "HTTP"))
   (0.3.0 2023-05-13
          "* Documentation was added. CI pipeline updated to a new 40Ants standard.")
