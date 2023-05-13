@@ -1,21 +1,31 @@
-(defpackage #:reblocks-lass/ci
+(uiop:define-package #:reblocks-lass-ci/ci
   (:use #:cl)
-  (:import-from #:40ants-ci/jobs/linter
-                #:linter)
+  (:import-from #:40ants-ci/jobs/linter)
   (:import-from #:40ants-ci/jobs/run-tests
                 #:run-tests)
   (:import-from #:40ants-ci/jobs/docs
                 #:build-docs)
   (:import-from #:40ants-ci/workflow
                 #:defworkflow))
-(in-package reblocks-lass/ci)
+(in-package #:reblocks-lass-ci/ci)
 
 
-;; (defworkflow docs
-;;   :on-push-to "master"
-;;   :by-cron "0 10 * * 1"
-;;   :cache t
-;;   :jobs ((build-docs)))
+(defworkflow linter
+  :on-push-to "master"
+  :by-cron "0 10 * * 1"
+  :on-pull-request t
+  :cache t
+  :jobs ((40ants-ci/jobs/linter:linter
+          :asdf-systems ("reblocks-lass"
+                         "reblocks-lass-docs"
+                         "reblocks-lass-tests"))))
+
+(defworkflow docs
+  :on-push-to "master"
+  :by-cron "0 10 * * 1"
+  :on-pull-request t
+  :cache t
+  :jobs ((build-docs :asdf-system "reblocks-lass-docs")))
 
 
 (defworkflow ci
@@ -23,6 +33,10 @@
   :by-cron "0 10 * * 1"
   :on-pull-request t
   :cache t
-  :jobs ((linter)
-         ;; (run-tests :coverage t)
-         ))
+  :jobs ((run-tests
+          :asdf-system "reblocks-lass"
+          :lisp ("sbcl-bin"
+                 ;; Issue https://github.com/roswell/roswell/issues/534
+                 ;; is still reproduces on 2023-02-06:
+                 "ccl-bin/1.12.0")
+          :coverage t)))
