@@ -6,6 +6,8 @@
 
 ## REBLOCKS-LASS ASDF System Details
 
+* Version: 0.2.0
+
 * Description: A helper for Reblocks framework to define `CSS` dependencies in `LASS` syntax.
 
 * Licence: Unlicense
@@ -51,7 +53,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29"></a>
 
-#### [package](cda1) `reblocks-lass`
+#### [package](652d) `reblocks-lass`
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -63,7 +65,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29"></a>
 
-###### [class](1cee) `reblocks-lass:lass-dependency` (local-dependency)
+###### [class](799f) `reblocks-lass:lass-dependency` (local-dependency)
 
 Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
@@ -71,7 +73,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29"></a>
 
-###### [reader](a241) `reblocks-lass:css-code` (lass-dependency) (:css)
+###### [reader](de4c) `reblocks-lass:css-code` (lass-dependency) (:css)
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -79,7 +81,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29"></a>
 
-##### [function](a68b) `reblocks-lass:make-dependency` lass-code
+##### [function](3f56) `reblocks-lass:make-dependency` lass-code
 
 This function creates Reblocks dependency with `CSS` style described in `LASS` `DSL`.
 
@@ -111,10 +113,10 @@ You can use this dependency in a method of [`reblocks/dependencies:get-dependenc
 [0fcf]: https://40ants.com/reblocks/dependencies/#x-28REBLOCKS-2FDEPENDENCIES-3AGET-DEPENDENCIES-20GENERIC-FUNCTION-29
 [293b]: https://github.com/40ants/reblocks-lass
 [3d0e]: https://github.com/40ants/reblocks-lass/actions
-[cda1]: https://github.com/40ants/reblocks-lass/blob/b1430f10506c816655fc6daac331b2fc99d8f886/src/core.lisp#L1
-[1cee]: https://github.com/40ants/reblocks-lass/blob/b1430f10506c816655fc6daac331b2fc99d8f886/src/core.lisp#L19
-[a241]: https://github.com/40ants/reblocks-lass/blob/b1430f10506c816655fc6daac331b2fc99d8f886/src/core.lisp#L20
-[a68b]: https://github.com/40ants/reblocks-lass/blob/b1430f10506c816655fc6daac331b2fc99d8f886/src/core.lisp#L40
+[652d]: https://github.com/40ants/reblocks-lass/blob/7c005f6cf4a164bce342892ef6ad7c87d70bea7a/src/core.lisp#L1
+[799f]: https://github.com/40ants/reblocks-lass/blob/7c005f6cf4a164bce342892ef6ad7c87d70bea7a/src/core.lisp#L19
+[de4c]: https://github.com/40ants/reblocks-lass/blob/7c005f6cf4a164bce342892ef6ad7c87d70bea7a/src/core.lisp#L20
+[3f56]: https://github.com/40ants/reblocks-lass/blob/7c005f6cf4a164bce342892ef6ad7c87d70bea7a/src/core.lisp#L40
 [a44f]: https://github.com/40ants/reblocks-lass/issues
 [7e98]: https://quickdocs.org/lass
 [184b]: https://quickdocs.org/reblocks
