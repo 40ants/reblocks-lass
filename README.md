@@ -6,20 +6,12 @@
 
 ## REBLOCKS-LASS ASDF System Details
 
-* Version: 0.3.0
-
 * Description: A helper for Reblocks framework to define `CSS` dependencies in `LASS` syntax.
-
 * Licence: Unlicense
-
 * Author: Alexander Artemenko <svetlyak.40wt@gmail.com>
-
 * Homepage: [https://40ants.com/reblocks-lass/][2335]
-
 * Bug tracker: [https://github.com/40ants/reblocks-lass/issues][a44f]
-
 * Source control: [GIT][293b]
-
 * Depends on: [lass][7e98], [reblocks][184b]
 
 [![](https://github-actions.40ants.com/40ants/reblocks-lass/matrix.svg?only=ci.run-tests)][3d0e]
@@ -47,7 +39,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29"></a>
 
-#### [package](86c3) `reblocks-lass`
+#### [package](1870) `reblocks-lass`
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -59,7 +51,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29"></a>
 
-###### [class](d568) `reblocks-lass:lass-dependency` (local-dependency)
+###### [class](8a79) `reblocks-lass:lass-dependency` (local-dependency)
 
 Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
@@ -67,7 +59,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29"></a>
 
-###### [reader](7d21) `reblocks-lass:css-code` (lass-dependency) (:css)
+###### [reader](1196) `reblocks-lass:css-code` (lass-dependency) (:css)
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -75,7 +67,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29"></a>
 
-##### [function](305c) `reblocks-lass:make-dependency` lass-code
+##### [function](c858) `reblocks-lass:make-dependency` lass-code
 
 This function creates Reblocks dependency with `CSS` style described in `LASS` `DSL`.
 
@@ -107,10 +99,10 @@ You can use this dependency in a method of [`reblocks/dependencies:get-dependenc
 [0fcf]: https://40ants.com/reblocks/dependencies/#x-28REBLOCKS-2FDEPENDENCIES-3AGET-DEPENDENCIES-20GENERIC-FUNCTION-29
 [293b]: https://github.com/40ants/reblocks-lass
 [3d0e]: https://github.com/40ants/reblocks-lass/actions
-[86c3]: https://github.com/40ants/reblocks-lass/blob/1f9410643ad27ddb319815be453e96b06e3a3125/src/core.lisp#L1
-[d568]: https://github.com/40ants/reblocks-lass/blob/1f9410643ad27ddb319815be453e96b06e3a3125/src/core.lisp#L19
-[7d21]: https://github.com/40ants/reblocks-lass/blob/1f9410643ad27ddb319815be453e96b06e3a3125/src/core.lisp#L20
-[305c]: https://github.com/40ants/reblocks-lass/blob/1f9410643ad27ddb319815be453e96b06e3a3125/src/core.lisp#L40
+[1870]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L1
+[8a79]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L19
+[1196]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L20
+[c858]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L40
 [a44f]: https://github.com/40ants/reblocks-lass/issues
 [7e98]: https://quickdocs.org/lass
 [184b]: https://quickdocs.org/reblocks
