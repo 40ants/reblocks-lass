@@ -39,7 +39,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29"></a>
 
-#### [package](1870) `reblocks-lass`
+#### [package](0e7d) `reblocks-lass`
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -51,7 +51,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29"></a>
 
-###### [class](8a79) `reblocks-lass:lass-dependency` (local-dependency)
+###### [class](94ee) `reblocks-lass:lass-dependency` (local-dependency)
 
 Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
@@ -59,7 +59,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29"></a>
 
-###### [reader](1196) `reblocks-lass:css-code` (lass-dependency) (:css)
+###### [reader](abbe) `reblocks-lass:css-code` (lass-dependency) (:css)
 
 <a id="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -67,7 +67,7 @@ Keeps `CSS` code, created using [`make-dependency`][e5b1] function.
 
 <a id="x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29"></a>
 
-##### [function](c858) `reblocks-lass:make-dependency` lass-code
+##### [function](3c5f) `reblocks-lass:make-dependency` lass-code
 
 This function creates Reblocks dependency with `CSS` style described in `LASS` `DSL`.
 
@@ -99,10 +99,10 @@ You can use this dependency in a method of [`reblocks/dependencies:get-dependenc
 [0fcf]: https://40ants.com/reblocks/dependencies/#x-28REBLOCKS-2FDEPENDENCIES-3AGET-DEPENDENCIES-20GENERIC-FUNCTION-29
 [293b]: https://github.com/40ants/reblocks-lass
 [3d0e]: https://github.com/40ants/reblocks-lass/actions
-[1870]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L1
-[8a79]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L19
-[1196]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L20
-[c858]: https://github.com/40ants/reblocks-lass/blob/d1ef70a3f7292589eee54505ede1e7a087cb0ed0/src/core.lisp#L40
+[0e7d]: https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L1
+[94ee]: https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L19
+[abbe]: https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L20
+[3c5f]: https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L40
 [a44f]: https://github.com/40ants/reblocks-lass/issues
 [7e98]: https://quickdocs.org/lass
 [184b]: https://quickdocs.org/reblocks
