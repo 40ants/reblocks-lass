@@ -1,0 +1,127 @@
+<html lang=en>
+ <head>
+  <meta charset=UTF-8><meta name=viewport
+      content="width=device-width, initial-scale=1">
+  <title>reblocks-lass - A helper for Reblocks framework to define CSS dependencies 
+   in LASS syntax.</title>
+  <link rel=alternate
+        href="https://40ants.com/reblocks-lass/changelog.xml"
+        type="application/rss+xml">
+  <link rel=stylesheet type="text/css"
+        href=theme.css>
+  <script type="text/javascript" src=jquery.js></script>
+  <script type="text/javascript" src=toc.js></script>
+  <script type="text/javascript">$(document).ready(function() {$('a:has(img)').css('border-bottom', 'none')})</script>
+  <link rel=stylesheet type="text/css"
+      href=highlight.min.css>
+  <script type="text/javascript"
+          src=highlight.min.js></script>
+  <script type="text/javascript">hljs.highlightAll();</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL71WXK73K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FL71WXK73K');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(42462884, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/42462884" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+ </head>
+ <body>
+  <div class=page><a id=fork-me href="https://github.com/40ants/reblocks-lass">Fork me on GitHub</a>
+   <div class=navbar>
+    <div class=navbar-inner>
+     <a class=brand href="/">
+      <img class=logo
+           src="https://40ants.com/img/logo.svg"></a>
+     <ul class=nav>
+      <li><a href="/posts/">Blog</a>
+      <li><a href="/ru/posts/">Blog (RU)</a>
+      <li><a href="/tips/">Lisp Tips</a>
+      <li><a href="/projects/">Our Projects</a>
+      <li><a href="/about/">About</a>
+     </ul>
+    </div>
+   </div>
+   <input type=checkbox id=sidebar-check>
+   <label for=sidebar-check>
+    <div id=sidebar-trigger>
+     <span></span><span></span><span></span>
+    </div></label><div class=sidebar><div class=header><form class=search method=GET action="search/">
+      <input type=text name=q>
+      <input type=submit value=Search><span id=search-progress></span>
+     </form>
+    </div><div class=content><div class=page-toc><ul><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-40INDEX-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-40INDEX-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">reblocks-lass - A helper for Reblocks framework to define CSS dependencies in LASS syntax.</a></p><ul><li><p><a href="#reblocks-lass-asdf-system-details" data-document="" data-node="reblocks-lass-asdf-system-details">REBLOCKS-LASS ASDF System Details</a></p></li><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40INSTALLATION-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40INSTALLATION-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">Installation</a></p></li><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40API-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40API-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">API</a></p><ul><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-3FPACKAGE-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-3FPACKAGE-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">REBLOCKS-LASS</a></p><ul><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">Classes</a></p><ul><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-24LASS-DEPENDENCY-3FCLASS-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-24LASS-DEPENDENCY-3FCLASS-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">LASS-DEPENDENCY</a></p></li></ul></li><li><p><a href="#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="" data-node="x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">Functions</a></p></li></ul></li></ul></li></ul></li><li><p><a href="changelog/#x-28REBLOCKS-LASS-DOCS-2FCHANGELOG-3A-40CHANGELOG-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29" data-document="changelog/" data-node="x-28REBLOCKS-LASS-DOCS-2FCHANGELOG-3A-40CHANGELOG-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29">ChangeLog</a></p></li></ul>
+     </div>
+    </div><div class=footer>
+     <a href="https://40ants.com/doc">[generated by 40ANTS-DOC]</a>
+    </div>
+   </div><div class=content role=main><h1>reblocks-lass - A helper for Reblocks framework to define CSS dependencies in LASS syntax.<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-40INDEX-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-40INDEX-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h1><h2 id="reblocks-lass-asdf-system-details">REBLOCKS-LASS ASDF System Details</h2><ul><li><p>Description: A helper for Reblocks framework to define <code>CSS</code> dependencies in <code>LASS</code> syntax.</p></li><li><p>Licence: Unlicense</p></li><li><p>Author: Alexander Artemenko &lt;svetlyak.40wt@gmail.com&gt;</p></li><li><p>Homepage: <a href="https://40ants.com/reblocks-lass/">https://40ants.com/reblocks-lass/</a></p></li><li><p>Bug tracker: <a href="https://github.com/40ants/reblocks-lass/issues">https://github.com/40ants/reblocks-lass/issues</a></p></li><li><p>Source control: <a href="https://github.com/40ants/reblocks-lass">GIT</a></p></li><li><p>Depends on: <a href="https://quickdocs.org/lass">lass</a>, <a href="https://quickdocs.org/reblocks">reblocks</a></p></li></ul><p><a href="https://github.com/40ants/reblocks-lass/actions"><img src="https://github-actions.40ants.com/40ants/reblocks-lass/matrix.svg?only=ci.run-tests"/></a></p><p><img src="http://quickdocs.org/badge/reblocks-lass.svg"/></p><h2>Installation<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40INSTALLATION-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40INSTALLATION-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h2><p>You can install this library from Quicklisp, but you want to receive updates quickly, then install it from Ultralisp.org:</p><pre><code class="">(ql-dist:install-dist &quot;http://dist.ultralisp.org/&quot;
+                      :prompt nil)
+(ql:quickload :reblocks-lass)</code></pre><h2>API<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40API-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40API-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h2><h3>REBLOCKS-LASS<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-3FPACKAGE-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-3FPACKAGE-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h3><div class=reference-bullet><div class=reference-bullet-header><a class=locative-type href="https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L1">package</a><div class=reference-object><div class=object-name><a href=#x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29 id=x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29>reblocks-lass</a></div></div><a class=bullet-link href=#x-28-23A-28-2813-29-20BASE-CHAR-20-2E-20-22REBLOCKS-LASS-22-29-20PACKAGE-29></a></div></div><h4>Classes<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h4><h5>LASS-DEPENDENCY<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-24LASS-DEPENDENCY-3FCLASS-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-40REBLOCKS-LASS-24LASS-DEPENDENCY-3FCLASS-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h5><div class=reference-bullet><div class=reference-bullet-header><a class=locative-type href="https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L19">class</a><div class=reference-object><div class=object-name><a href=#x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29 id=x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29>reblocks-lass:lass-dependency</a></div><div class=object-args><span class=locative-args></span></div></div><a class=bullet-link href=#x-28REBLOCKS-LASS-3ALASS-DEPENDENCY-20CLASS-29></a></div><div class=bullet-content><p>Keeps <code>CSS</code> code, created using <a href="https://40ants.com/reblocks-lass/#x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29" data-document="https://40ants.com/reblocks-lass/" data-node="x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29"><code>make-dependency</code></a> function.</p></div></div><p><b>Readers</b></p><div class=reference-bullet><div class=reference-bullet-header><a class=locative-type href="https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L20">reader</a><div class=reference-object><div class=object-name><a href=#x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29 id=x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29>reblocks-lass:css-code</a></div><div class=object-args><span class=locative-args></span><span class=locative-args>(:css)</span></div></div><a class=bullet-link href=#x-28REBLOCKS-LASS-3ACSS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-LASS-3ALASS-DEPENDENCY-29-29></a></div></div><h4>Functions<a class=header-link
+     href=#x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29
+     title="Permalink to this headline"
+     id=x-28REBLOCKS-LASS-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-LASS-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29></a></h4><div class=reference-bullet><div class=reference-bullet-header><a class=locative-type href="https://github.com/40ants/reblocks-lass/blob/729d2b7f0d8f37436a89d3224a86db3fd85ed11e/src/core.lisp#L40">function</a><div class=reference-object><div class=object-name><a href=#x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29 id=x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29>reblocks-lass:make-dependency</a></div><div class=object-args><span class=locative-args>lass-code</span></div></div><a class=bullet-link href=#x-28REBLOCKS-LASS-3AMAKE-DEPENDENCY-20FUNCTION-29></a></div><div class=bullet-content><p>This function creates Reblocks dependency with <code>CSS</code> style described in <code>LASS</code> <code>DSL</code>.</p><p>You can use this dependency in a method of <a href="https://40ants.com/reblocks/dependencies/#x-28REBLOCKS-2FDEPENDENCIES-3AGET-DEPENDENCIES-20GENERIC-FUNCTION-29"><code>reblocks/dependencies:get-dependencies</code></a> generic-function like this:</p><pre><code class="lisp">(defmethod reblocks/dependencies:get-dependencies ((widget source-widget))
+  (append
+   (list
+    (reblocks-lass:make-dependency
+      `(.source-widget
+        :border-top &quot;2px solid #cc4b37&quot;
+        (input :margin 0)
+        (.dist :margin-right 1em)
+        (.label-column :white-space &quot;nowrap&quot;
+                       :vertical-align &quot;top&quot;)
+        (.field-column :width &quot;100%&quot;)
+        ((:and .dist .disabled) :color &quot;gray&quot;)
+
+        ((.source-controls &gt; (:or form input))
+         :display &quot;inline-block&quot;
+         :margin-left 1em)
+        (.error :color &quot;red&quot;))))
+   (call-next-method)))</code></pre></div></div>
+   </div><div class=footer>
+    <hr class=separator>
+    <p class=fineprint>Created with passion by <em>40Ants</em><a class=lisp-logo
+     href="http://lisp-lang.org/">
+      <img
+           src="https://40ants.com/img/made-with-lisp.svg"></a>
+   </div>
+  </div>
+ </body>
+</html>
